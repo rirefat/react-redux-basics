@@ -35,5 +35,8 @@ export default function Posts() {
         );
     }
 
-    return <div>{content}</div>;
+    return <>
+        <h2 className="font-semibold text-xl my-4">Available Posts</h2>
+        <div>{content}</div>
+    </>;
 }

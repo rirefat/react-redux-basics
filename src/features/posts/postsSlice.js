@@ -10,7 +10,7 @@ const initialState = {
 
 export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
     const posts = await getPosts();
-    return posts;
+    return posts.slice(0,5);
 })
 
 const postsSlice = createSlice({
